@@ -2,23 +2,32 @@ import React, { useState } from 'react'
 import { StyleSheet, Text, View, Image, Pressable } from 'react-native'
 import { greeting } from './assets/greeting'
 
-const [ count, setCount ] = useState(0)
 
 let randomGreeting = Math.floor(Math.random() * greeting.length)
 console.log(randomGreeting)
-
-const onButtonClick = () => {
-  displayGreeting = setCount(greeting[Math.floor(Math.random() * greeting.length)])
-}
-
-const displayGreeting = greeting[randomGreeting]
 
 const images = {
   atlantic: require('./assets/earth-11652.png'),
   asia: require('./assets/asia-australia.png')
 }
 
+let displayGreeting = greeting[randomGreeting]
+
 const App = () => {
+  const [ count, setCount ] = useState(0)
+
+  const onButtonClick = () => {
+    const randomGreeting = Math.floor(Math.random() * greeting.length)
+
+    setCount(randomGreeting)
+  
+    displayGreeting = greeting[count]
+
+    console.log(displayGreeting, count)
+  
+    return displayGreeting
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{displayGreeting.hello}</Text>
