@@ -54,9 +54,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   text: {
-    fontFamily: 'Roboto',
     fontWeight: 'bold',
-    fontSize: 84,
+    fontSize: 72,
     color: 'white',
     lineHeight: 85
   },
@@ -70,7 +69,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: 12,
     paddingHorizontal: 32,
-    borderRadius: 4,
+    borderRadius: 10,
     elevation: 3,
     backgroundColor: 'blue'
   },

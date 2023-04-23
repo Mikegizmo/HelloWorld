@@ -33,5 +33,26 @@ export const greeting = [
   world: 'Welt',
   translate: 'Eine andere Sprache',
   url: '/atlantic-world.png'
+  },
+  {
+    id: 5, // Polish
+    hello: 'Witam',
+    world: 'Świat',
+    translate: 'Inny język',
+    url: '/atlantic-world.png'
+  },
+  {
+    id: 6, // Scottish Gaelic
+    hello: 'Hàlo',
+    world: 'Saoghal',
+    translate: 'Cànan eile',
+    url: '/atlantic-world.png'
+  },
+  {
+    id: 7, // Japanese
+    hello: 'Konnichiwa',
+    world: 'Sekai',
+    translate: 'Hoka no gengo',
+    url: '/asia-australia.png'
   }
 ]
