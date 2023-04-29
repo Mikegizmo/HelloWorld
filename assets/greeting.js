@@ -49,7 +49,14 @@ export const greeting = [
     url: '/atlantic-world.png'
   },
   {
-    id: 7, // Japanese
+    id: 7, // Turkish
+    hello: 'Merhaba',
+    world: 'Dünya',
+    translate: 'Başka lisan',
+    url: '/atlantic-world.png'
+  },
+  {
+    id: 8, // Japanese
     hello: 'Konnichiwa',
     world: 'Sekai',
     translate: 'Hoka no gengo',
